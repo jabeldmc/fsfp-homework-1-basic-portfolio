@@ -1,0 +1,251 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-image: url( '../images/background-sayagata.png' );
+    font-family: 'Seravek' , Arial , 'Helvetica Neue' , Helvetica , sans-serif;
+    font-size: 15pt;
+    color: #777777;
+}
+
+h1, h2, h3 {
+    font-family: 'Iowan Old Style' , Georgia , Times , 'Times New Roman' , serif;
+    font-weight: bold;
+}
+
+/*** header
+***/
+
+#header {
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+}
+
+#header-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#header h1 {
+    float: left;
+    padding-left: 24pt;    /* 1em */
+    padding-right: 24pt;    /* 1em */
+    height: 56pt;    /* 2/3em + 1em + 2/3em = 16pt + 24pt + 16pt */
+    background-color: #4aaaa5;
+    line-height: 56pt;    /* 2/3em + 1em + 2/3em = 16pt + 24pt + 16pt */
+    font-size: 24pt;
+    color: #ffffff;
+}
+
+#header .menu {
+    float: right;
+    font-family: 'Seravek' , Arial , 'Helvetica Neue' , Helvetica , sans-serif;
+}
+
+#header .menu .menu-item {
+    display: inline-block;
+    padding-left: 15pt;    /* 1em */
+    padding-right: 15pt;    /* 1em */
+    height: 56pt;    /* same as `#header h1` */
+    line-height: 56pt;    /* same as `#header h1` */
+}
+
+#header .menu .menu-item a {
+    text-decoration: none;
+    color: #777777;
+}
+
+#header .menu .menu-item:hover {
+    background-color: #4aaaa5;
+}
+
+#header .menu .menu-item:hover a {
+    color: #ffffff;
+}
+
+#header .menu .menu-active a {
+    color: #4aaaa5;
+}
+
+#header .menu .menu-active:hover a {
+    color: #ffffff;
+}
+
+#header .menu .menu-separator {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 56pt;    /* same as `#header h1` */
+    line-height: 56pt;    /* same as `#header h1` */
+    color: #dddddd;
+}
+
+/*** content
+***/
+
+#content {
+    margin-top: 35px;
+    margin-bottom: 100px;    /* add space to scroll */
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
+    padding: 25px;
+    width: 906px;    /* 960px - 2px - 25px - 25px - 2px */
+    background-color: #ffffff;
+}
+
+#content h2 {
+    font-size: 24pt;
+    color: #4aaaa5;
+}
+
+#content hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-color: #dddddd;
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+}
+
+#content #about-photo {
+    display: block;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+#content p {
+    margin-top: 1em;
+    line-height: 1.75em;
+}
+
+#content p:first-child {
+    margin-top: 0em;
+}
+
+#content .portfolio-project {
+    display: inline-block;
+    position: relative;    /* needed for `position: absolute` in h3 */
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+#content .portfolio-project:last-child {
+    margin-bottom: 0px;
+}
+
+#content .portfolio-project h3 {
+    position: absolute;
+    bottom: 10px;
+    width: 300px;    /* same as `#content .portfolio-project img` */
+    height: 35pt;   /* 2/3em + 1em + 2/3em = 10pt + 15pt + 10pt */
+    background-color: #4aaaa5;
+    line-height: 35pt;    /* 2/3em + 1em + 2/3em = 10pt + 15pt + 10pt */
+    text-align: center;
+    font-size: 15pt;    /* same as `body` */
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#content .portfolio-project img {
+    display: block;
+    width: 300px;
+    height: 200px;
+    filter: opacity( 0.75 );
+}
+
+#content .portfolio-project img:hover {
+    filter: opacity( 1 );
+}
+
+#content form label {
+    display: block;
+    margin-top: 1em;    /* same as `#content p` */
+    line-height: 1.75em;    /* same as `#content p` */
+}
+
+#content form label:first-child {
+    margin-top: 0em;    /* same as `#content p:first-child` */
+}
+
+#content form input[type=text] {
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
+    padding: 10px;
+    width: 882px;    /* 906px - 2px - 10px - 10px - 2px */
+    font-family: 'Seravek' , Arial , 'Helvetica Neue' , Helvetica , sans-serif;
+    font-size: 13pt;
+    color: #aaaaaa;
+}
+
+#content form input[type=text]:hover {
+    border-color: #4aaaa5;
+}
+
+#content form textarea {
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
+    padding: 10px;
+    width: 882px;    /* 906px - 2px - 10px - 10px - 2px */
+    font-family: 'Seravek' , Arial , 'Helvetica Neue' , Helvetica , sans-serif;
+    font-size: 13pt;
+    color: #aaaaaa;
+}
+
+#content form textarea:hover {
+    border-color: #4aaaa5;
+}
+
+#content form input[type=submit] {
+    margin-top: 1em;
+    height: 35pt;    /* 2/3em + 1em + 2/3em = 10pt + 15pt + 10pt */
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
+    padding-left: 15pt;    /* 1em */
+    padding-right: 15pt;    /* 1em */
+    line-height: 35pt;    /* 2/3em + 1em + 2/3em = 10pt + 15pt + 10pt */
+    font-family: 'Seravek' , Arial , 'Helvetica Neue' , Helvetica , sans-serif;
+    font-size: 15pt;    /* same as `body` */
+    color: #777777;
+}
+
+#content form input[type="submit"]:hover {
+    border-color: #4aaaa5;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+/*** footer
+***/
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    border-style: solid;
+    border-top-width: 10px;
+    border-color: #4aaaa5;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #666666;
+}
+
+#footer p {
+    text-align: center;
+    font-size: 13pt;
+    color: #ffffff;
+}
