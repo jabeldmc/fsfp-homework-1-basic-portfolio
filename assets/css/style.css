@@ -79,11 +79,10 @@ h1, h2, h3 {
 
 #header .menu .menu-separator {
     display: inline-block;
-    padding-left: 0px;
-    padding-right: 0px;
-    height: 56pt;    /* same as `#header h1` */
-    line-height: 56pt;    /* same as `#header h1` */
-    color: #dddddd;
+    vertical-align: middle;
+    width: 2px;
+    height: 20pt;
+    background-color: #cccccc;
 }
 
 /*** content
